@@ -1,0 +1,37 @@
+#firstgradiant{
+    border:1px solid black;
+    width:200px;
+    height: 200px;
+    /* default linear gradiant is top to bottom */
+    background-image: linear-gradient(red , blue);
+  /* left to right ,, we can erite to right */
+  background-image: linear-gradient(to right, red ,blue);
+  /* right to left ,, we can write to left */
+  background-image: linear-gradient(to left, red ,blue);
+    /* top to botton right     write to right bottom */
+    background-image: linear-gradient(to right bottom, red ,blue);
+    /* left bottom, top right,top left */
+    /* now we are using multiple colour */
+    background-image: linear-gradient(to right, red ,blue, white);
+    /* here we can use transperacy by adding rgba value */
+    background-image: linear-gradient(to right rgba(255,0,0,0) , rgba(0,0,255,1 ));
+
+    /* radial gradiant */
+    background-image: radial-gradient(yellow,orange, red);
+    /* we can adda % also */
+    background-image: radial-gradient( circle, blue 10%, pink 20%,black 50%);
+
+    /* conical gradiant */
+    background-image:conic-gradient(red, orange, yellow, green, blue);
+    background: conic-gradient(
+    hsl(360, 100%, 50%),
+    hsl(315, 100%, 50%),
+    hsl(270, 100%, 50%),
+    hsl(225, 100%, 50%),
+    hsl(180, 100%, 50%),
+    hsl(135, 100%, 50%),
+    hsl(90, 100%, 50%),
+    hsl(45, 100%, 50%),
+    hsl(0, 100%, 50%)
+);
+}
