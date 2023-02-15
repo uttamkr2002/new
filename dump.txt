@@ -1,0 +1,29 @@
+commit 031a90fac1f10f91bac37abfef2cb5c4cdc8dda2
+Author: uttamkr2002 <sonuttam2002@gmail.com>
+Date:   Tue Feb 14 08:53:35 2023 +0530
+
+     gradiant in css
+
+commit d115f6b9a605a476d27cc4d526bf495e0ff9c2c1
+Author: uttamkr2002 <sonuttam2002@gmail.com>
+Date:   Tue Feb 14 08:15:10 2023 +0530
+
+    linear gradiant
+
+commit 03fd50a201efdec8de25d3761cf77a622a262468
+Author: uttamkr2002 <sonuttam2002@gmail.com>
+Date:   Tue Feb 14 08:06:25 2023 +0530
+
+    linear gradiant
+
+commit 7b3b509c00e0a3c9be9505549de3d5ee87cf44ca
+Author: uttamkr2002 <sonuttam2002@gmail.com>
+Date:   Mon Feb 13 17:55:07 2023 +0530
+
+    first html
+
+commit 922d7ad8c2d16d63e3fcd8c4322756d4c1b5328d
+Author: uttamkr2002 <sonuttam2002@gmail.com>
+Date:   Mon Feb 13 17:46:34 2023 +0530
+
+    new readme folder

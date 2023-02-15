@@ -1,0 +1,21 @@
+p{
+   position :static;
+    
+}
+div{
+    /* here we are displaying all the boxes in inline */
+   display:inline-block;
+    width:200px;
+    height:200px;
+    background-color: aqua;
+    border: 1px solid black;
+
+}
+/* RElative positioning  =iska movement relative hai normal positioning ka  */
+#box3{
+    position:relative;
+    top:100px;
+    left:50px;
+}
+
+
