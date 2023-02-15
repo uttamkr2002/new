@@ -2,7 +2,7 @@ p{
    position :static;
     
 }
-div{
+.pos{
     /* here we are displaying all the boxes in inline */
    display:inline-block;
     width:200px;
@@ -17,5 +17,15 @@ div{
     top:100px;
     left:50px;
 }
-
-
+/* browser window ke respect me hm fixed karte hai */
+#box1{
+    position:fixed;
+    top:100px;
+    left:10px;
+     
+}
+/* wrapper class create kiya kyuki scroll ka ke dekhna tha */
+.wrapper{
+    height :1000px;
+    width:100vw;
+}
