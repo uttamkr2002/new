@@ -1,0 +1,50 @@
+.container{
+    border:1px solid black;
+    width :600px;
+    height:600px;
+    display:flex;
+
+    justify-content: flex-start;
+    justify-content: flex-end;
+    /* opossite direction me place ho jai gi */
+    justify-content: center;
+    /* center me place ho jai gi */
+    justify-content: space-around;
+    /* sab  boxes ke beech me eqaul space ho jai gi
+    ###lekin first box ke left me last box ke 
+    right me equal space nahi hogi */
+
+    justify-content: space-evenly;
+    /* sara boxes ke beech me space evenly ho jai ga */
+
+
+    justify-content: space-between;
+    /* aak box start border and end border pe raha ga
+    aur saea box ke between equal space hai */
+
+
+
+
+
+    /* justify content main axis pe kaam karta hai */
+    /* align item cross axis pe align hoti hai */
+
+
+    align-items: flex-start;
+    align-items: center;
+    align-items: stretch;
+    align-items: baseline;
+    align-items: flex-start;
+    align-items: baseline;
+    align-items: center;
+    justify-content: center;
+    /* above2 lines make the content center in box */
+
+
+}
+
+.box{
+    border: 1px solid brown;
+    width: 50px;
+    background-color: aqua;
+}
