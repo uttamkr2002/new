@@ -29,3 +29,9 @@ p{
     height :1000px;
     width:100vw;
 }
+/* Sticky position toggles b/w relative and fixed */
+#box4{
+    position:sticky;
+    /* ye har dam browser se opx top me fix ho jai ga */
+    top:0px
+}
