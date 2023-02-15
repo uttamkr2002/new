@@ -1,0 +1,45 @@
+.container{
+    border:1px solid green;
+    height: 400px;
+    /* boxex are vertical */
+    display:flex;
+    /* display flex make the box horizontal */
+    /* display flex likhna ke bad jo child class 
+    hota hai wo main axis (jisko hm horizontal axis bhi kahta hai
+    ) usma sara boxes stack ke taur pe place ho jata hai */
+   
+    /* flex-direction: column;
+    /* flex direction collumn karna se hm main axis ka direction change
+    kar raha hai */
+    /* issi karan se iska direction fir se vertical ho gaya */
+/* 
+    flex-direction: row-reverse;
+
+    flex-direction: row;
+    
+    flex-direction: column-reverse;  */
+
+    flex-wrap: wrap;
+    /* width ko entact kar pa raha hai
+    aur jab hm screen ko chota kar raha hai toh 
+    boxes next line me chali jai gi */
+
+    flex-wrap: nowrap;
+    /* default value jisma chota ho jata hai */
+
+    flex-wrap: wrap-reverse;
+    /* just boxes ulta jai gai jaise wrap me ho raha tha */
+
+    
+
+}
+.box{
+    border: 1px solid brown;
+    background-color: yellowgreen;
+    width: 50px;
+    height: 100px;
+    /* hm abhi bhi boxes choti ho jaa raha hai jab
+    hm screen ko chota jar raha hai
+    koi way hai jisse hm entract kar sakta hai
+    iss property ko hm abb container wala box me apply karega */
+}
