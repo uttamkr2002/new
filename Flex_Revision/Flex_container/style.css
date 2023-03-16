@@ -1,0 +1,53 @@
+.container{
+    height:400px;
+    border: 2px solid green;
+    /* main axis me atack me lag jai ga */
+    display:flex; 
+/* 
+    flex-direction: column;
+    flex-direction: row;
+    flex-direction: column-reverse;
+    flex-direction: row-reverse; */
+
+
+    /*  width entact karta hai*/
+
+/* default value no-wrap */
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+
+
+
+    /* justify content main axis ke upar item ko alisn karta hai */
+   justify-content: center;
+   /* charo box ke beech me equal space ho jai gi 
+   last aur first me nahi */
+   justify-content: space-around;
+
+   /* aagar mai sara boxes ke bech me equal spaces chahta hu toh  */
+justify-content: center;
+/* justify-content: space-between; */
+align-items: flex-start;
+align-items: flex-end;
+align-items: center;
+
+/* sarri content ka baseline same ho jai ga */
+align-items: center;
+/* gap generate kar raha hau boxes ke beech */
+gap:10px;
+
+   /* justify-content: left;
+   justify-content: right; */
+
+
+
+
+}
+
+.box{
+    border:1.5px solid black;
+    background-color: aqua;
+    width:70px;
+    /* width ko fixe karna ke bad bhi squeeze ho raha hai  */
+    /* toh hm flex wrap ka use karta hai */
+} 

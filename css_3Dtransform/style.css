@@ -10,7 +10,7 @@ div{
     /* transform: translateZ(100px);  
     sirf itn a likhna pe kam nahi hota hai apne ko prespective chaiye
  */
-      transform: perspective(15px) translateZ(-10px);
+      transform: perspective(15px) translateZ(-5px);
       /* jaise jaise hamara aakho se koi chiz door jata hai 
       waise waise chota lagna lagta hai */
 }

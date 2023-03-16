@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#heading{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+.container{
+    /* display:flex; */
+    /* border:4px solid black; */
+    height:100%;
+    max-width:1200px;
+    /* margin : 0- auto   mtlb left side aur right side ka margin iss tarah se place kiya jai li contrnt center me ho jai  */
+    margin : 0 auto;
+    padding:20px;
+    display:flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+   
+}
+
+.box{
+    width:32%;
+    position:relative;
+    /*  */
+    margin-bottom: 20px;
+    /* border radius taki un kono ko rounded kar saka  */
+    border-radius: 10px;
+    overflow:hidden;
+    filter:grayscale(100%);
+}
+
+.box :hover{
+    transform:scale(1.03);
+    filter:drop-shadow(0 0 10px #333);
+    transition: 0.3s;
+    /* filter: grayscale(0%); */
+}
+
+.box:hover img {
+    filter:grayscale(0%);
+}
+
+.card figcaption{
+    
+}

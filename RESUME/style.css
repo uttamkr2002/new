@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+
+:root{
+    --primary-color:#ff7613;
+    --text-color:#727171;
+
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: Inter , sans-serif;
+    background-color: black;
+    color:white
+}
+/* for all the ancor tag */
+a{
+    text-decoration: none;
+    color:white;
+
+}
+
+img{
+    width:100%;
+
+}
+
+/* layouts */
+
+.container{
+    max-width:1000px;
+    width:98%;
+    /* it makes the content center to main axis */
+    margin:0 auto;
+    /* grid will divide the content into column */
+    display: grid;
+    padding:5rem;
+    background:#878787;
+    grid-template-columns: 1fr 1fr;
+    gap:4rem;
+}
+
+@media only screen and (max-width: 768px){
+   .container{
+    width:100%;
+    grid-template-columns: 1fr;
+     padding:3rem;
+     gap:7rem;
+   } 
+}
+
+/* time 14:53 html css resume web cifar */
+
+
+/* profile */
+.profile_container{
+    dispaly:flex;
+    gap:2rem;
+}

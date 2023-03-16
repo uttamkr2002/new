@@ -1,0 +1,45 @@
+.container{
+    border: 5px solid black;
+    height: 300px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content:first baseline;
+     
+}
+
+.box{
+    border:3px solid red;
+    background-color: aqua;
+    /* height:50px; */
+    /* aagar hm sara class me likha ga to sara class equal badha ga */
+    /* flex-grow: 1; */
+    /* flex-shrink:4; */
+    width: 100px;
+
+
+    /* flex width se aagar content jaida ho ga toh bhi overflow content dikha ga */
+/* width se overflow wala content hidden ho jata hai */
+
+}
+/* sabka starting me order 0 hota hai */
+#box1{
+    order:1;
+    /* isma box1 ka size badh raha hai */
+    /* flex-grow: 2; */
+    /* basicaly decide kar sakta hai ki kaun kitni jaldi chota ho ga */
+    /* flex-shrink: 2; */
+    flex-basis: 50%;
+}
+#box2{
+    order: 3;
+}
+#box4{
+    order:2;
+}
+
+/* us box se pehle aa jata hai */
+#box3{
+    order:2;
+}

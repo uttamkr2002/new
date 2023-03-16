@@ -1,0 +1,42 @@
+p{
+    position :static;
+     
+ }
+ .pos{
+     /* here we are displaying all the boxes in inline */
+    display:inline-block;
+     width:200px;
+     height:200px;
+     background-color: aqua;
+     border: 1px solid black;
+ 
+ }
+
+#box1{
+    position:absolute;
+    top: 200px;
+    
+
+}
+
+#box2{
+    position:fixed;
+    left:400px;
+}
+
+/* sticky bina scroll kara relative ki tarah aur scroll kiya fixed ki tarah behave karta  */
+#box3{
+    position:sticky;
+    top:200px;
+    left:200px
+}
+
+#box4{
+    position :relative;
+    top:200px;
+    left:200px;
+}
+.wrapper{
+    height: 2000px;
+    width: 1000px;
+}

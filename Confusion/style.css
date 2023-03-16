@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+   
+}
+.container{
+    /* parrent hai */
+    font-size:10px; 
+
+    /* vw :veiw width 100% cover kar le ga width screen ka */
+    width:100vw;
+    /* vh : veiw height 100% cover kar le ga */
+    height:100vh;
+}
+
+/* em ka use waha pe kare ga jaha pe mere ko parrent ke relative me data dalna hai */
+
+#first{
+     /* font-size 10em ka mtlb ye apne parrent ka 10 times lena wala hai */
+    /* iska parrent hai container jo ki 10 px hai 10*10=100 */
+    font-size:10em;
+    /* but when we do padding then padding :2 em = 2*fontsize*parrentfont_size */
+    padding:2em; 
+}
+
+
+/* now we are showing rem */
+/* rem take reference from html */
+
+/* rem ka use waha pe kare ga jaha pe pura page ka font size mere ko aak jaisa rakhna hai */
+html{
+    font-size:25px;
+}
+
+#second{
+    /* font-size  3 rem means 25 * 3 = 75px */
+    font-size: 3rem;
+    /* padding 3 rem means 25*3=75 */
+    padding:3rem;
+}

@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+ #wrapper{
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+ 
+.container{
+    height:100%;
+    max-width: 1200px;
+    margin:0 auto;
+    padding:20px;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.gallery {
+    /* flex wrap is karan kiya kyuki hama sara images ke beech me space chaiye tha */
+    display:flex;
+    /* flex-wrap is karan kiye kyuki hama certain number of images chaiye tha aak row me baki dusara row me shift ho jana chiye */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+
+    /* 
+    ************
+    *|32|32|32|*   lines are spaces of 4 unit
+    *          *
+    *          *
+    ************
+    
+    
+    */
+
+    /* card is with 32% is liye kyuki total size 100 hota hai 32*3=96 ho ga bakki bacha 4 jo ki space me distribute kiya jai ga image ko */
+    width:32%;
+    /* width 32 % ke bad image overflow ho raha hai */
+
+
+    /* Mere ko image ke upar text ko overlap karana hai ton hmko position absolute karna   ho ga */
+    /* lekin absolute ka ye condition hota hai ki uska parent contrainer non static  hona chaiye */
+   position:relative;
+
+
+   margin-bottom: 20px;
+
+   /* border radius se edge gol ho jata hai */
+   border-radius: 10px;
+   overflow: hidden;
+
+}
+
+
+.card img{
+    /* width 100% karne se rectangular se square me ban gaya */
+    width:100%;
+    /* lekin abhi bhi hamara bottom images ka edge rectangle hai square nahi toh hm height ko bhi 100% kar de ga */
+    /* height 100% likhna ka mtlb jitna bhi height ka parrent ka height hai utna hi img ka bhi ho jai ga */
+    height:100%;
+    filter:grayscale(100%);
+}
+
+/* we want to add hover proprty  */
+
+.card:hover{
+    transform: scale(1.03);
+    filter:drop-shadow( 0 0 10px #003);
+    
+    transition: 0.3s;
+}
+.card:hover img{
+ filter:grayscale(0%);
+}
+
+
+.card figcaption{
+
+    /* position absolutre katna se image 1 dikhna laga ga */
+    position: absolute;
+    bottom:0;
+    left:0;
+    padding: 25px;
+    width:100%;
+    height:20%;
+    font-size: 16px;
+    font-weight: 500;
+    color:#fff;
+    opacity:0;
+    border-radius: 0 0 10px 10px;
+    background:linear_gradient(0deg, rgba(0,0,0,0.5), rgba(255,255,255,255));
+    transition: 0.3s;
+
+}
+
+.card:hover figcaption{
+    opacity:1;
+    transform:scale(1.03);
+}
