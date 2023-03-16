@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:tahoma;
+    font-size:32px;
+    padding: 100px 40px 0 px 40px ;
+}
+h1{
+    margin-bottom:30px;
+}
+p{
+    margin-top:10px;
+
+    /* ### aab yaha pe hm jo do paragraph hai wo dusara line se suru ho raha hai  */
+    /* ### lekin hm chaiya toh usko aak line se suru kar sakta hai  */
+
+    /*  aagar hm yaha pe display ko inline set kar deta hai toh wah sameline se start ho jai ga */
+
+    display:inline;
+}
+
+p.one{
+    background-color: #ffdd00;
+    /* display:none; */
+    /* the above line property removes the content with color */
+}
+
+/* ###  Koi bhi paragraph banatah hai toh wah block hoti hai isko hm inline bhi kar sakta hai */
+/*### hm block element ka property ko inline bhi kar sakta hai */
+p.two{
+    background-color:red;
+}
+
+
+spam{
+    background-color:aqua;
+    display:block;
+    /* Now by applying the above feature we are changing inline element which is spam into block element  */
+    /* As you see here aqua line in the next line the entire width of screen is aqua */
+    
+
+
+    display:inline-block;
+    /* The above keyword will keep the color property like inline */
+    /* Is property me woh block banai ga lekin inline ,me  */
+}

@@ -57,8 +57,9 @@ body{
 
 /* kam hi nahi kar raha hai */
 .nav {
-    position : sticky;
-    top: -280 px;
+    position : fixed;
+    top: 0 px;
+    width: 100%;
    
 }
 
