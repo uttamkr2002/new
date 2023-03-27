@@ -12,10 +12,15 @@ body{
    
 }
 
-.container,.photo,.photo img,.nav,.nav ul li,.nav  ul,.content,h1,P{
-    float:left;}
+/* .container,.photo,.photo img,.nav,.nav ul li,.nav  ul,.content,h1,P{ */
+    /* float:left;} */
 
-
+    .nav {
+        position : sticky;
+        top: 0 ;
+       
+       
+    }
 
 .nav ul li{
     background-color:#000;
@@ -56,16 +61,6 @@ body{
 
 
 /* kam hi nahi kar raha hai */
-.nav {
-    position : fixed;
-    top: 0 px;
-    width: 100%;
-   
-}
 
-@media screen and 
-(min-width: 900px;){
-    .nav{
-        top: -500 px;
-    }
-}
+
+
