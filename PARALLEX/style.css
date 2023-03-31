@@ -78,7 +78,7 @@ h2 {
     position: relative;
   }
   
-  .desc {
+  .desc { 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -88,7 +88,7 @@ h2 {
     font-size: 3.5rem;
     color: black;
     font-weight: 600;
-  }
+   } 
   
   .foot {
     height: 20%;

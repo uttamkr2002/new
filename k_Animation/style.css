@@ -1,0 +1,57 @@
+.container{
+    height:500px;
+    width:500px;
+    background-color:green;
+    border:3px solid red;
+    display:flex;
+}
+
+
+.box{
+    border:2px solid orange;
+    background-color:aqua;
+    height:150px;
+    width:150px;
+    margin:20px;
+
+    /* transition-property: all; */
+    /* Thw above line of code creates a performance impact as all the elements will have the transition property */
+
+    /* transition-property:background-color; */
+    /* transition-delay:5s; */
+
+
+    /* ### transition shorthand property:-
+    transition: transition-property (background-color)  duration_of_effect   transition_timming_function(ease in easeout )  transition-delay  */
+
+    /* transition: background-color 0.3s ease 3s; */
+    /* The above kine changes the background color in 0.3 s and it takes delay in change of 3 sec */
+
+    /* transition: transform 3s ease-out; */
+
+    /* Now if you want to change the color and also use all hover properties then */
+
+    /* transition: all 2s cubic-bezier(0,-2.45, 0.25, 1) 1s; */
+
+    /* The above line we use bezier function through console */
+
+    /* transition-property:transform;
+    transition-duration:3s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-delay:1s; */
+
+    /* These four line will also give the same property as the shorthand notation */
+
+
+    transition :transform 0.5s ease 1s; 
+}
+
+.box:hover{
+    /* background-color: blueviolet; */
+    /* transition:3s; */
+    /* transform:translateX(500px); */
+    /* transform:rotate(360deg); */
+
+    /* Now we want to transform and rotate so combining them */
+    transform:translateX(500px) rotate(360deg);
+}

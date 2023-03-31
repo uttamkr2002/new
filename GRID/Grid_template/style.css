@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.container{
+    height:700px;
+    width:700px;
+    background-color:aquamarine;
+    display:grid;
+
+    /* Yaha pe hm bata raha hai ki hm 4 rows defiene kiya hai */
+ /* grid-template-rows: 30px 150px 400px 30px; */
+    /* Yaha pe hm bata raha hai ki single column hai */
+ /* grid-template-columns: 400px; */
+    /* grid-gap:30px; */
+    
+
+
+    /* Lrts try to defience 2 Columns and 3 Rows */
+
+  grid-template-columns:200px 400px; 
+grid-template-rows:30px 500px 30px;   
+
+grid-template-areas:
+"hd hd"
+"side main"
+"ft ft "
+
+
+}
+
+#Header{
+    grid-area:hd;
+}
+
+#footer{
+    grid-area:ft;
+
+}
+
+#Sidebar{
+    grid-area: side;
+}
+
+#content{
+    grid-area:main;
+}
+
+
+
+.box{
+
+    /* height:100px;
+    width:100px; */
+    border:3px solid black;
+    background-color: aqua;
+}

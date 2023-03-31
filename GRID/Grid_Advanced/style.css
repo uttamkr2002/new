@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height:700px;
+    width:900px;
+    display:grid;
+    background-color: aquamarine;
+    grid-gap:10px;
+
+    /* Yaha pe aak property use kara ga jissa rows mera increase ho jai ga jab tak chaha  */
+    grid-auto-rows:minmax(100px, auto);
+/* Here if auto will not be there then all the element except selected will be squeesed
+for eg:- grid-template-rows:repeat(5,1fr)
+Then after 5 th row all the rows will be squeezed */
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+.box{
+    border:2px solid black;
+    background-color: aqua;
+}

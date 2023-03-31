@@ -1,0 +1,42 @@
+*{
+    margin: 0;padding: 0;
+}
+
+.container{
+    border:1px solid black;
+    background-color:yellow;
+    display:grid;
+    grid-template-rows:100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap:10px;
+    height: 700px;
+    width:700px;
+
+
+
+    /* justify-content: start,end,center,space-between,space-around,evenly */
+
+
+
+    justify-content:start;
+    justify-content:end;
+    justify-content:center;
+    justify-content:space-between;
+    justify-content:space-evenly;
+    justify-content:space-around;
+
+
+    /* Align item works on cross axis */
+    /* Align */
+
+align-content:start;
+align-content:end;
+align-content:baseline; 
+
+
+}
+
+.box{
+    border:1px solid black;
+    background-color:aqua;
+}

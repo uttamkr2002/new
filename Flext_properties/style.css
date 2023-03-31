@@ -13,13 +13,13 @@
     kar raha hai */
     /* issi karan se iska direction fir se vertical ho gaya */
  
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
 
     /* flex-direction: row; */
     
-    /* flex-direction: column-reverse;  */ 
+    /* flex-direction: column-reverse;   */
 
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     /* width ko entact kar pa raha hai
     aur jab hm screen ko chota kar raha hai toh 
     boxes next line me chali jai gi */
@@ -33,13 +33,13 @@
     
 
 }
-.box{
+.box{ 
     border: 1px solid brown;
     background-color: yellowgreen;
     width: 50px;
     height: 100px;
-    /* hm abhi bhi boxes choti ho jaa raha hai jab
-    hm screen ko chota jar raha hai
-    koi way hai jisse hm entract kar sakta hai
-    iss property ko hm abb container wala box me apply karega */
+    /* /* hm abhi bhi boxes choti ho jaa raha hai jab */
+    /* hm screen ko chota jar raha hai */
+    /* koi way hai jisse hm entract kar sakta hai */
+    /* iss property ko hm abb container wala box me apply karega */
 }

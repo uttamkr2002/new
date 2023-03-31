@@ -1,7 +1,11 @@
 .container{
+    height:400px;
+    width:300px;
+    overflow-y: scroll;
 margin:20px;
 padding:20px;
 border:10px solid black;
+position:relative;
     
 }
 

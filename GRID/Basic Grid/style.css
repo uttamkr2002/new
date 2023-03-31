@@ -1,0 +1,63 @@
+.container{
+    background-color:red;
+    height:700px;
+    border:2px solid black;
+
+    display:grid;
+    /* By the above command it creates space in between boxes horizontaly */
+
+   /* grid-template-rows: 110px 110px 110px;
+   grid-template-columns: 110px 110px 110px ; */
+
+   /* The above two linws creates three rows and 3 columns  */
+
+   /* The above line was not the best practise */
+
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+
+   /* 1fr means 1 fraction of the entire width of the container */
+
+   /* The above line creates 3 rows and three columns
+   by giving each column and row a fraction of the container  for eg:-1/3 for each boxes */
+
+   grid-template-columns: repeat(3,1fr);
+   grid-template-rows: repeat(3,1fr);
+   /* This syntax short the above syntax as we have to write less  ##It is the best practise */
+
+
+   /* #We can also give gap */
+   row-gap: 10px;
+   column-gap: 10px;
+
+   /* The above two line can br combined and written in one line */
+   /* Syntax: grid-gap:row-gap columns-gap */
+
+
+     grid-gap:10px;
+     
+     /* grid gap nahi kam kare ga height aur width hard coded raha ga */
+}
+
+.box{
+    background-color:aqua;
+    border:1px solid black;
+    /* height:100px;
+    width:100px;  */
+}
+
+#item1{
+
+    /* Ye 1 basically line number hai */
+     grid-column-start: 1; 
+    grid-column-end:4;
+    /* grid-row-start:1; */
+    /* grid-row-end:4;  */
+    /* The above two lines combine 1 ,2 ,3 lines */
+
+    /* The above foue lines can be written in one line */
+    /* Syntax: column-start/row-start/colum-end/row-end */
+    grid-area:1/1/4/4;
+}
+
+  

@@ -35,6 +35,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    /* text align center se nahi aai ga */
+    text-align: center;
   }
   
   hr {

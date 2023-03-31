@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
+/* Global variable are decleared */
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    /* font-family:"Be Vietnam Pro", sans-serif; */
+    font-family: "Be Vietnam Pro";
+    scroll-behavior: smooth;
+}
+
+
+
+.wrapper{
+    overflow-x:hidden;
+    overflow-y: auto;
+    height:100vh;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto; 
+
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    /* background-color:blue; */
+}
+
+.logo-container{
+    display:flex;
+    /* Aagar  */
+    justify-content:baseline;
+    align-items:center;
+}
+
+
+.logo{
+    width:80px;
+}
+
+.logo-text{  
+      /*ohn Doe ko hama j swe sata dena hai  */
+    margin-left:-1.2rem;
+    font-size:28px;
+}
+
+.nav-items{
+    display:flex;
+    gap:2rem;
+    padding:0 4rem;
+}
+
+.nav-items div{
+  font-size:20px;
+  font-weight:500;
+  /* Cursor hatt wala  */
+  cursor:pointer;
+}
+
+
+.nav-items div a{
+    color:black;
+}
+a{
+    text-decoration: none;
+}
+
+.nav-items div :hover{
+    font-weight: bold;
+    transition:0.8s;
+}
+
+
+.hero-section{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    gap:5rem;
+    margin:4rem auto;
+    padding:0 1rem;
+    padding-bottom: 8rem;
+
+}
+
+
+
+
+.fadded-text{
+    user-select:none;
+    /* position: absolute; */
+  bottom: -20.04rem;
+  left: 16rem;
+  font-size: 10rem;
+  z-index: 1;
+  font-weight: 900;
+  opacity: 20%;
+}
+
+
+.hero-section-left{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:2rem;
+    
+}
+
+.hero-section-heading{
+    font-size:35px;
+    color:#343d68;
+    font-weight: 500;
+}
+
+
+.role{
+    color:purple;
+    font-weight:800;
+}
+
+
+.hero-section-sub-heading{
+    font-size:45px;
+    line-height: 45px;
+
+}
+
+.hero-section-description{
+
+    font-weight: 500;
+   margin-top:1rem;
+   width:70%;
+}
+
+
+
+button{
+    border: 2px solid  rgb(252,81,81);
+  background-color: #ff0000;
+  color: #fff;
+  padding: 1.5rem 3.5rem;
+  font-size: 1.9rem;
+  box-shadow: 0.3rem 0.3rem 5px rgb(172, 172, 172);
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+}
+button::before {
+  position: absolute;
+  content: "";
+  background-color: var(--white);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform: scaleX(0%);
+  transition-property: transform;
+  transform-origin: left;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+button:hover::before {
+  transform: scaleX(100%);
+}
+button:hover {
+  color: var(--black);
+  cursor: pointer;
+  transition-property: color;
+  transition-timing-function: ease;
+  transition-duration: 2s;
+}
+button.button {
+  border: none;
+}
+
+
+
+/* hero-section-right */
+
+.hero-section-right{
+display:flex;
+/* Isko relative hamna iss liye kiya kyuki hama aaga jaa ke ispa bahut sara image ko overlap karna hai */
+
+/* Overlap karna ki ye consition hoto hai ki absolute honi chaiye */
+/* absolute hone ke liye uska nearest ancestor(parrent) relative ya non static hona chiye hona chaiye */
+position:relative;
+}
+
+.absolute{
+    position:absolute;
+}
+
+.user-image{
+    padding:2.5rem;
+    /* border:1px solid black; */
+    filter:grayscale(1);
+    transition: all 1s;
+    animation: scaleImage 5s linear infinite;
+
+}
+
+.user-image img{
+    z-index:-8;
+}
+
+@keyframes scaleImage {
+    0%{
+    filter:grayscale(0);
+    transform:scale(1);
+    }
+
+    50%{
+       transform:scale(1.1);
+       filter:grayscale(1);
+       box-shadow: 3px 3px 10px black;
+    }
+    100%{
+
+        transform:scale(1);
+        filter:grayscale(0);
+
+
+    }
+}
+
+/* icon-dots */
+.icon-dot{
+    z-index: 9;
+    bottom:-1rem;
+    right:0;
+    animation-name:dotAnimation;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dotAnimation {
+
+    /* Transform property hai basically jissa movement hota hai  */
+   0%{
+    transform:translateY(0px);
+   }
+
+   50%{
+   transform:translateY(0px);
+   }
+
+   100%{
+    transform:translateY(0px);
+   }
+}
+
+/* Animate icon cude */
+
+.icon-cube{
+    /* position:absolute; */
+    /* position:top-right; */
+    top:-0.8rem;
+    right:1em;
+    z-index:9;
+    animation-name:cubeRotate;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cubeRotate{
+  0%{
+    transform:rotateY(0deg) translateY(0px );
+  }
+50%{
+    transform:rotateZ(180deg) translateY(-12px );
+}
+100%{
+    transform:rotateY(360deg) translateY(0px );
+}
+
+
+}
+
+.icon-circle{
+
+    z-index:9;
+    left:0;
+    bottom: 0;
+    animation-name: shakeEffect;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes shakeEffect{
+  
+    50%{
+
+        left:5%;
+        bottom:10%;
+    }
+}
+
+.icon-zigzaks{
+    z-index:9;
+    animation-name:linearEffect;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear ;
+
+}
+
+@keyframes linearEffect {
+    50%{
+        transform:translateX(20px);
+    }
+}
+
+
+.icon-plus{
+    position:absolute;
+    margin-left:50%;
+    margin-right:50%;
+    animation-name:upEffect;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes upEffect{
+    50%{
+        transform:translateY(20px);
+    }
+}
+
+
+.project-section{
+    background-color:rgb(231,231,231);
+    /* kyuki sirf upar upar wala container se space chaiya */
+    margin-top:4rem;
+}
+
+.project-header{
+    color:red;
+    text-align:center;
+    font-size:90px;
+    padding-top:30px;
+}
+
+.project-container{
+    max-width:1200px;
+    border:10px solid black;
+    /* margin 0 auto se container apne parrent container se center me aa jai ga */
+    margin:0 auto;
+    padding:3rem 0;
+    display:flex;
+    flex-direction:column;
+    gap:120px;
+    
+    
+
+}
+
+.project-card{
+    width:90%;
+    border:5px solid green;
+    height:550px;
+    background-image: url(Images/Position/Project2.png);
+    /* Image badi thi toh fit nahi ho raha tha toh background-size:cover */
+    background-size:cover;
+    /* Aagar mera image chota hai toh mera image bahut bar repeat kare ga */
+    /* background-repeat:no-repeat */
+position:relative;
+/* We have to set the image relative because we have to overlap other images */
+
+box-shadow:0px 0px 40px #1f1f1f;
+}

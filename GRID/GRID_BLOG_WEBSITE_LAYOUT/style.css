@@ -1,0 +1,48 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing:border-box;
+}
+
+.container{
+
+border:2px solid black;
+/* background-color:aquamarine; */
+height:100vh;
+width:100vw;
+display:grid;
+grid-gap:10px;
+
+grid-template-rows: 40px 400px 40px;
+grid-template-columns:200px 500px;
+
+grid-template-areas:
+"hd hd"
+" side main"
+"ft ft"
+
+
+
+
+
+}
+
+.box{
+    border:3px solid black;
+    background-color:aqua;
+
+}
+
+#Header{
+    grid-area:hd;
+}
+
+#Sidebar{
+    grid-area:side;
+}
+#Content{
+    grid-area:main;
+}
+
+#Footer{
+    grid-area:ft;
+}
